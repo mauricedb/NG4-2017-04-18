@@ -1,0 +1,5 @@
+<ul>
+  <li *ngFor="let cat of cats">
+    <app-cat [cat]="cat" (iWasClicked)="printIt($event)"></app-cat>
+  </li>
+</ul>

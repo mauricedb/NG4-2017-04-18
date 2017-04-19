@@ -1,0 +1,8 @@
+<form #theForm="ngForm">
+
+<ng-content></ng-content>
+
+<input type="text" #theName="ngModel" name="firstName" [(ngModel)]="person.firstName">
+
+{{oops(theForm)}}
+</form>
