@@ -1,0 +1,19 @@
+<p>
+  cats works!
+</p>
+
+<div class="cat">
+{{catName}}
+
+<input type="text" [(ngModel)]="catName">
+</div>
+
+{{now.toTimeString()}}
+
+<ul>
+  <li *ngFor="let cat of cats">
+    {{cat.catName}}
+  </li>
+</ul>
+
+<button (click)="hello()">Hallo</button>
