@@ -1,0 +1,14 @@
+<h2>
+  Template cat works!
+</h2>
+
+<form >
+  <input type="text" #name="ngModel" [(ngModel)]="cat.name" name="name" required minlength=2>
+  <!--{{name.errors | json}}-->
+  <div *ngIf="name.errors && name.errors.required">
+    Het veld is verplicht
+  </div>
+  <div *ngIf="name.errors && name.errors.minlength">
+    Het veld is max 2 lang
+  </div>
+</form>
