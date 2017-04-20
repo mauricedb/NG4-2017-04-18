@@ -1,0 +1,18 @@
+<p>
+  amovies works!
+</p>
+
+<ul>
+  <li *ngFor="let movie of movies | async">
+    <h2>{{movie.title}}</h2>
+    <img [src]="movie.poster_path" alt="">
+  </li>
+</ul>
+
+
+<ul>
+  <li *ngFor="let movie of movies | async">
+    <h2>{{movie.title}}</h2>
+    <img [src]="movie.poster_path" alt="">
+  </li>
+</ul>
